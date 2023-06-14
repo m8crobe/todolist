@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#reg_table, #login_table {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh;
+    text-align: center;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    color: #999;
+    cursor: pointer;
+}
+
+.h3{
+    padding-bottom: 20px;
+}
+
+input[type="text"], input[type="password"] {
+    line-height: 40px;
+    box-sizing: border-box;
+    height: 40px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]::placeholder, input[type="password"]::placeholder  {
+    color: #999;
+}
+
+input[type="text"]:focus, input[type="password"]:focus  {
+    border-color: #ccc;
+}
+
+button {
+    box-sizing: border-box;
+    height: 40px;
+    width : 90px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px 10px;
+    transition: border-color 0.3s, background-color 0.3s;
+    color: #333;
+    margin: 0 2px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    border-color: #ccc;
+    background-color: #ccc;
+}
+
+.btn_box {
+    margin-top: 50px;
+    text-align: center;
+}
+

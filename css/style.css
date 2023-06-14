@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+li {
+    width: 150px;
+}
+
+body{
+    background-color: #f2f2f2;
+}
+
+/* header 스타일 */
+header {
+    position: fixed;
+    height: 100px;
+    box-sizing: border-box;
+    top: 0;
+    /* width: 100% */
+    left: 0;
+    right: 0;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header .sess_id{
+    position: fixed;
+    top:0px;
+    right:10px;
+    
+}
+.container h3,
+.container h2,
+.container h1 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* 카테고리 관리 메뉴 스타일 */
+.category-management {
+    float: right;
+}
+
+.category-management ul {
+    display: flex;
+}
+
+
+.category-management a {
+    color: #fff;
+}
+
+/* 좌측 카테고리 메뉴 스타일 */
+.category-menu {
+    position: fixed;
+    top: 100px;
+    background-color: #f2f2f2;
+    list-style: none;
+    height: 100%;
+    padding-bottom: 100vh;
+    margin: 0;
+    float: left;
+}
+
+.category-menu li a {
+    display: block;
+    padding: 8px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    background-color: #f2f2f2;
+    transition: background-color 0.3s ease;
+}
+
+.category-menu li a:hover {
+    background-color: #e0e0e0;
+}
+
+/* 메인 영역 스타일 */
+main {
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    margin: 100px 0px 0px 150px;
+    padding-left: 50px;
+    height: calc(100vh - 100px);
+    overflow: auto;
+}
+
+.cate {
+    display: flex;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.confirm_box {
+    display: none;
+    position: fixed;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.confirm_box h3 {
+    margin-top: 0;
+}
+
+.confirm_box button {
+    margin-top: 10px;
+}
+
+.ui-state-default {
+    border: 1px solid #e0e0e0;
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px;
+}
+
+
+input[type="text"] {
+    line-height: 40px;
+    box-sizing: border-box;
+    height: 40px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]::placeholder {
+    color: #999;
+}
+
+input[type="text"]:focus {
+    border-color: #ccc;
+}
+
+
+button {
+    box-sizing: border-box;
+    height: 40px;
+    border: 2px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    transition: border-color 0.3s, background-color 0.3s;
+    color: #333;
+    margin: 0 2px 0;
+}
+
+button:hover {
+    border-color: #ccc;
+    background-color: #ccc;
+}
+
+.login_frame {
+    position: fixed;
+    top: 240px;
+    left: 40%;
+    margin: 0 auto;
+    padding: 0;
+    width: 500px;
+    height: 400px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 30px;
+}

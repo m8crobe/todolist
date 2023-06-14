@@ -1,0 +1,80 @@
+
+/* 전체 컨테이너 스타일 */
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* 폼 스타일 */
+form {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[type="button"] {
+    padding: 8px 16px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="button"]:hover {
+    background-color: #555;
+}
+
+/* 카테고리 목록 스타일 */
+.category-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.category-list ul,
+.category-list li {
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+.category-list li {
+    background-color: #f2f2f2;
+}
+
+.category-list button[type="button"] {
+    padding: 4px 8px;
+    margin-right: 4px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.category-list button[type="button"]:hover {
+    background-color: #777;
+}
+
+/* footer 스타일 */
+footer {
+    margin-top: 20px;
+}
