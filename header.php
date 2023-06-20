@@ -10,8 +10,6 @@
         $sess_gbn = "로그인";
         $sess_href = "index.php";
     }
-
-    echo "<script>console.log('[세션] $sess_user_idx')</script>";
 ?>
 <!DOCTYPE html>
 <html>
@@ -54,14 +52,16 @@
             <?php
 
             if($sess_user_idx){
-            // 카테고리 목록을 가져옴
+            // 카테고리 목록
                 $query = "SELECT * FROM category WHERE user_idx='$sess_user_idx'  AND user_id = '$sess_user_id' AND user_key<>'1' order by user_seq asc";
                 $result = db_fetch_arr($query);
 
                 // 카테고리 메뉴 생성
         
                 foreach ($result as $row){
-                    echo "<li><a href=''>".$row['category']."</a></li>";
+                    $category = $row['category'];
+                    $encode_cate = base64_encode($category);
+                    echo "<li><a href='todo_list.php?user_key=".$row['user_key']."&category=".$encode_cate."'>".$row['category']."</a></li>";
                 }
 
                 $etc_qry = "SELECT * FROM todo where cate_idx='1'";

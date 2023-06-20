@@ -17,13 +17,13 @@
                 </td>
             </tr>
             <tr>
-                <td><input type="text" id="reg_id" name="reg_id" placeholder="*아이디(4~20)"></td>
+                <td><input type="text" id="reg_id" name="reg_id" placeholder="*아이디(4~20)" alt="아이디(4~20자) 영문자로 시작"></td>
             </tr>
             <tr>
-                <td><input type="password" id="reg_pw" name="reg_pw" placeholder="*비밀번호(3~40)"></td>
+                <td><input type="password" id="reg_pw" name="reg_pw" placeholder="*비밀번호(3~40)" alt="비밀번호(3~40자)"></td>
             </tr>
             <tr>
-                <td><input type="password" id="reg_pw2" name="reg_pw2" placeholder="*비밀번호 재입력"></td>
+                <td><input type="password" id="reg_pw2" name="reg_pw2" placeholder="*비밀번호 재입력" alt="비밀번호 재입력"></td>
             </tr>
             <tr>
                 <td colspan="2">
@@ -70,7 +70,7 @@ function reg_input_check() {
     let id = $('#reg_id');
     let pw1 = $('#reg_pw');
     let pw2 = $('#reg_pw2');
-    let idvalcheck = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{4,20}$/;                 // 영문자로 시작하며, 영문자와 숫자가 각 한글자씩 필수 (4~20)
+    let idvalcheck = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{4,20}$/;                    // 영문자로 시작하며, 영문자와 숫자가 각 한글자씩 필수 (4~20)
     let pwvalcheck = /^(?!.*["\'])([a-zA-Z0-9!@#$%^&*~.,?_]{3,40})$/;                // "이나 ' 를 제외한 영문/숫자/특문 포함 가능 (3~40)
 
     if (id.val() == "") {

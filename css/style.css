@@ -5,6 +5,8 @@
 
 a {
     text-decoration: none;
+    font-family: sans-serif; 
+    color: #333;
 }
 
 ul {
@@ -14,14 +16,20 @@ ul {
 
 li {
     width: 150px;
+    font-family: sans-serif;
 }
 
-body{
+body {
     background-color: #f2f2f2;
+    font-family: sans-serif;
 }
 
+button {
+    cursor: pointer;
+}
 /* header 스타일 */
 header {
+    font-family: sans-serif;
     position: fixed;
     height: 100px;
     box-sizing: border-box;
@@ -105,7 +113,6 @@ main {
 .cate {
     display: flex;
     margin-bottom: 20px;
-    align-items: center;
 }
 
 .confirm_box {
@@ -129,22 +136,32 @@ main {
     border: 1px solid #e0e0e0;
     width: 420px;
     display: flex;
+    line-height:52px;
     justify-content: space-between;
     cursor: pointer;
-    padding: 5px;
+    padding: 5px 10px;
 }
 
-
+.ui-state-list{
+    border: 1px solid #e0e0e0;
+    height:30px;
+    line-height:30px;
+    width: 420px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 5px 10px;
+}
 input[type="text"] {
+    height: 40px;
     line-height: 40px;
     box-sizing: border-box;
-    height: 40px;
     border: 2px solid #ccc;
     padding: 10px;
     transition: border-color 0.3s;
 }
 
-input[type="text"]::placeholder {
+input[type="text"]::placeholder, textarea::placeholder {
     color: #999;
 }
 
@@ -152,7 +169,21 @@ input[type="text"]:focus {
     border-color: #ccc;
 }
 
-
+input[name='title']{
+    width: 800px;
+}
+input {
+    margin-bottom:10px;
+}
+textarea{
+    width: 800px;
+    height: 550px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    padding: 10px;
+    transition: border-color 0.3s;
+    resize: none;
+}
 button {
     box-sizing: border-box;
     height: 40px;

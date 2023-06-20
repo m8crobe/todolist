@@ -19,6 +19,8 @@
         $_SESSION['user_id'] = $test_id;
         $_SESSION['test_login'] = true;
 
+        $location = "list_category.php";
+        
         echo "<script>parent.location.href='$location';</script>";
     }
 

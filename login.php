@@ -13,10 +13,10 @@
                 <td colspan="2" class="h3"><h3>로그인</h3></td>
             </tr>
             <tr>
-                <td><input type="text" id="login_id" name="login_id" placeholder="*아이디"></td>
+                <td><input type="text" id="login_id" name="login_id" placeholder="*아이디" alt="아이디입력"></td>
             </tr>
             <tr>
-                <td><input type="text" id="login_pw" name="login_pw" placeholder="*비밀번호"></td>
+                <td><input type="text" id="login_pw" name="login_pw" placeholder="*비밀번호" alt="비밀번호입력"></td>
             </tr>
             <tr>
                 <td colspan="2">

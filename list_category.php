@@ -18,8 +18,7 @@ $cate_cnt = count($categories);
         <input type="hidden" id="pro" name="pro" value="I">
         <input type="hidden" id="e_pk" name="e_pk" value="">
         <div class="cate">
-            <!-- <label for="category_name">카테고리명</label> -->
-            <input type="text" id="category_name" name="category_name" placeholder="카테고리 이름을 입력하세요">
+            <input type="text" id="category_name" name="category_name" placeholder="카테고리 이름을 입력하세요" alt="카테고리 이름 입력">
             <button type="button" id="submit_btn" onclick="return insert_cate();">등록</button>
         </div>
         <div class="category-list">
